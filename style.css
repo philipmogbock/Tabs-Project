@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    /* padding: 0; */
+    background-color: #EAC7C7;
+    height: 100vh;
+    font-family: sans-serif;
+    /* border: 5px solid blue; */
+
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 30rem;
+    border-radius: 0.5rem ;
+    background-color:rgb(230, 226, 219);
+    /* border: 5px solid black; */
+}
+
+.img-container{
+    /* margin: 0 2rem; */
+}
+
+.container{
+    width: 90vw;
+    /* for margin 0 up and down auto left and right */
+    margin: 0 auto;
+    max-width: 1170px;
+    min-width: 340px;
+    padding: 5rem 0;
+
+}
+
+.text-container{
+    border-radius: 0.5rem ;
+    background-color:#EAE0DA;    
+}
+
+
+.btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+}
+
+.btn{
+    background-color:#A0C3D2;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+    letter-spacing: 0.25rem;
+    border: none;
+    cursor: pointer;
+    /* display: none; */
+    transition: all .3s linear; 
+
+}
+
+
+.btn:hover{
+    background-color: #EAE0DA; 
+    /* color: white; */
+    filter: brightness(0.9);
+    
+}
+.btn:nth-child(1){
+    border-top-left-radius: 0.5rem;
+}
+
+.btn:nth-child(3){
+    border-top-right-radius: 0.5rem;
+}
+
+
+.tabs-content{
+    padding: 2rem 1.5rem;
+    color: gray;
+    /* transition: all 1s linear;  */
+
+}
+
+.tabs-content p{
+    cursor: text;
+}
+
+.content {
+    display: none;    
+}
+
+.content.live{
+    display: block;
+}
+
+.btn.live{
+    background-color:#EAE0DA; 
+    /* border: none; */
+}
+
+
+/* when the screen gets bigger than 992px put image and content on the same row  */
+@media(min-width:992px){
+    .img-container{
+        margin-bottom: 0;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+
+}
+
